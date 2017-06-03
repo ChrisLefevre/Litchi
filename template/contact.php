@@ -39,38 +39,38 @@ include 'template/includes/header.php';
             <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
                        
                        <p><?php echo $page['text']; ?></p>
-
+					   	   <div id="success"></div>
                 <form name="sentMessage" id="contactForm" novalidate>
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls">
                             <label><?php $sw->_em("Name"); ?></label>
-                            <input type="text" class="form-control" placeholder="Name" id="name"  required data-validation-required-message="<?php $sw->_em("Please enter your name."); ?>">
+                            <input type="text" class="form-control" placeholder="<?php $sw->_em("Name"); ?>" id="name"  required data-validation-required-message="<?php $sw->_em("Please enter your name."); ?>">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls">
                             <label><?php $sw->_em("Email Adress"); ?></label>
-                            <input type="email" class="form-control" placeholder="Email Address" id="email" data-validation-validemail-message="<?php $sw->_em("Not a valid email address"); ?>" required data-validation-required-message="<?php $sw->_em("Please enter your email address."); ?>">
+                            <input type="email" class="form-control" placeholder="<?php $sw->_em("Email Adress"); ?>" id="email" data-validation-validemail-message="<?php $sw->_em("Not a valid email address"); ?>" required data-validation-required-message="<?php $sw->_em("Please enter your email address."); ?>">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label><?php $sw->_em("Phone Number"); ?></label>
-                            <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="<?php $sw->_em("Please enter your phone number."); ?>">
+                            <input type="tel" class="form-control" placeholder="<?php $sw->_em("Phone Number"); ?>" id="phone" required data-validation-required-message="<?php $sw->_em("Please enter your phone number."); ?>">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls">
                             <label><?php $sw->_em("Message"); ?></label>
-                            <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="<?php $sw->_em("Please enter a message."); ?>"></textarea>
+                            <textarea rows="5" class="form-control" placeholder="<?php $sw->_em("Message"); ?>" id="message" required data-validation-required-message="<?php $sw->_em("Please enter a message."); ?>"></textarea>
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <br>
-                    <div id="success"></div>
+                 
                     <div class="form-group">
                         <button type="submit" class="btn btn-secondary"><?php $sw->_em("send"); ?></button>
                     </div>

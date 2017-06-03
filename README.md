@@ -12,6 +12,9 @@ Ce Blog a été testé en PHP 5.6 et PHP 7.0.
 C’est un projet Open Source disponible sur GitHub sur lequel vous pouvez contribuer.
 
 
+La démo du blog est visible [ici](https://staging.glose.media/litchi/)
+
+
 ## Comment débuter
 
 

@@ -15,7 +15,7 @@ if(isset($_GET['id'])) {
 }
 
 include 'template/includes/header.php';
-$posts = $sw->blogposts('blog',$maxitems,$actpage,false);
+$posts = $sw->blogposts('blog',$maxitems,$actpage,true);
 $latestPost = sizeof($posts);
 
 ?>
@@ -47,7 +47,7 @@ $latestPost = sizeof($posts);
                            <?php echo $post["title"]; ?>
                         </h2>
                         <h3 class="post-subtitle">
-                            <?php echo mb_strimwidth($post["body"], 0, 150, "..."); ?>
+                            <?php if(!empty($post["headline"])) echo $post["headline"]; else echo mb_strimwidth($post["body"], 0, 100, "..."); ?>
                         </h3>
                     </a>
                     <p class="post-meta"><?php $sw->_em("posted on"); ?> <?php echo  $sw->dateTime($post['pubdate']); ?></p>
