@@ -45,7 +45,17 @@ include 'template/includes/header.php';
     <article>
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+	         <div  class=" offset-lg-1 col-lg-1">   
+			<div id="sharefloat">
+				
+			<span>Partager</span>
+			
+			<a target="_blank" href="http://twitter.com/?status=<?php echo urlencode($bpost['title']); ?> <?php echo urlencode($meta_url); ?>" ><i class="fa fa-twitter icons"></i></a>
+			<a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode($meta_url); ?>"><i class="fa fa-facebook icons"></i></a>
+			<a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&#038;url=<?php echo urlencode($meta_url); ?>&#038;title=<?php echo urlencode($bpost['title']); ?>" ><i class="fa fa-linkedin icons"></i></a>
+			</div>
+			 </div>
+                <div class="col-lg-8 offset-lg-0 col-md-10 offset-md-1">
                   <?php echo $bpost['article']; ?>
                 </div>
             </div>

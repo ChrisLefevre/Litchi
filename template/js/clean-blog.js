@@ -37,5 +37,16 @@
                 this.previousTop = currentTop;
             });
     }
-
+$("body").css("opacity",1);
+$(window).scroll(function ()
+{
+	if ($(this).scrollTop() > 600)
+	{
+		$("body").addClass('onscroll');
+	}
+	else
+	{
+		$("body").removeClass('onscroll');
+	}
+});
 })(jQuery); // End of use strict
