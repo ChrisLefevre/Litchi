@@ -9,3 +9,9 @@ sw-db/backup/*
 sw-db/fr_siteinfos.source.json
 
 sw-db/db.029cd027.conf.php
+
+sw-db/db.sqlite
+
+*.json
+
+sw-db/db.sqlite
