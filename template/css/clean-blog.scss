@@ -126,8 +126,11 @@ body {
 }
 
 
-article img, article iframe {
+article img, article iframe  {
     max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 @media only screen and (min-width: 992px) {
