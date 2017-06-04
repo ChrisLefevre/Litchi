@@ -125,6 +125,11 @@ body {
     text-transform: uppercase;
 }
 
+
+article img, article iframe {
+    max-width: 100%;
+}
+
 @media only screen and (min-width: 992px) {
     #mainNav {
         border-bottom: 1px solid transparent;
