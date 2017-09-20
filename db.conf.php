@@ -10,7 +10,7 @@ $dbconnect = array(
  */
 
 
-/* MySQL : */
+/* SQLIte : */
 
 $dbconnect = array();
 
