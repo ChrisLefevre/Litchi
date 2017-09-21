@@ -7,7 +7,7 @@ Litchi est construit sur le Framework Swalize 2.0 Beta de [Glose Media](https://
 
 Le Swalize engine permet de stocker les publications dans des fichiers json pour obtenir plus de flexibilité. Ainsi, SQL n’est utilisé que pour améliorer l’indexation des données. 
 
-Ce Blog a été testé en PHP 5.6 et PHP 7.0. 
+Ce Blog a été testé en PHP 5.6 et PHP 7.0. Il nécéssite Apache et SQlite. 
 
 C’est un projet Open Source disponible sur GitHub sur lequel vous pouvez contribuer.
 
